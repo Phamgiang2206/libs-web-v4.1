@@ -1,0 +1,4 @@
+# LIB’S Digital v4.2 — full beta
+Upload the contents of this folder to the repository root, including public/images. Run schema.sql in Supabase SQL Editor before deployment. Render Node: npm install / npm start (or Dockerfile). Set DATABASE_URL to the Supabase session pooler URI and ADMIN_KEY to a strong secret in Render Environment. Never commit secrets or customer data. Check /api/health after deployment. Admin: /#admin.
+
+Local test: npm test (JSON fallback, no DATABASE_URL, no production NODE_ENV). PostgreSQL uses one locked JSONB state row as transitional storage. Existing JSON data is not migrated automatically. OTP, real payment, POS, production security and backup remain pending. Gold: 1500 points; 10%/15% rewards. Browser and live PostgreSQL tests remain pending. Do not use for real customer data yet.
