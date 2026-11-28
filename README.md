@@ -5,3 +5,6 @@ V4.4: WebP assets, lazy loading, static files and public menu bypass database qu
 
 ## V4.6
 Adds authenticated profile, saved addresses, favourites, membership summary, completed-order points summary and admin customer insights. No email verification, QR membership card, personalized vouchers or checkout address picker yet. Existing JSONB schema retained. Back up production before deploy. Existing backend regression test passes; browser and live PostgreSQL not tested.
+
+## V4.7
+Admin: /#admin, existing ADMIN_KEY. Reports use Vietnam dates and completed order totals including shipping. Manual pause, sold-out products, voucher toggle, CSV and 30-second polling. Menu now reads database to enforce availability; no schema change. Staff roles, price editing, automatic opening hours and dedicated kitchen screen are not implemented. Local JSON tests only.
